@@ -1,0 +1,123 @@
+[23-Jun-2022 02:00:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/ventasdemujer/public_html/epharma/productos.php on line 106
+[23-Jun-2022 02:00:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/ventasdemujer/public_html/epharma/productos.php on line 117
+[22-Jul-2022 20:06:56 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(12): require_once('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:06:44 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(12): require_once('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:06:54 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 /home1/ventasdemujer/public_html/epharma/login.php(2): require_once('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:08:03 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(12): require_once('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:21:48 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(12): require_once('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:22:05 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[23-Jul-2022 02:23:13 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_error(): Argument #1 ($mysql) must be of type mysqli, bool given in /home1/ventasdemujer/public_html/epharma/inicio.php:10
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/inicio.php(10): mysqli_error(false)
+#1 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/inicio.php on line 10
+[24-Jul-2022 13:47:03 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php:31
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php(31): mysqli_fetch_array(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(101): include('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php on line 31
+[24-Jul-2022 13:47:15 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php:31
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php(31): mysqli_fetch_array(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(101): include('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php on line 31
+[24-Jul-2022 13:47:32 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php:31
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php(31): mysqli_fetch_array(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(101): include('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php on line 31
+[24-Jul-2022 13:55:41 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php:31
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php(31): mysqli_fetch_array(false)
+#1 /home1/ventasdemujer/public_html/epharma/productos.php(98): include('/home1/ventasde...')
+#2 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/ajax/listarpromocion.php on line 31
+[24-Jul-2022 14:04:44 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/productos.php:104
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/productos.php(104): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/productos.php on line 104
+[24-Jul-2022 14:04:52 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/productos.php:104
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/productos.php(104): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/productos.php on line 104
+[24-Jul-2022 14:06:12 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/ventasdemujer/public_html/epharma/productos.php:104
+Stack trace:
+#0 /home1/ventasdemujer/public_html/epharma/productos.php(104): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home1/ventasdemujer/public_html/epharma/productos.php on line 104
+[24-Jul-2022 15:10:23 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 105
+[24-Jul-2022 15:10:23 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:10:48 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 105
+[24-Jul-2022 15:10:48 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:30:12 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 105
+[24-Jul-2022 15:30:12 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:38:40 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:38:40 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:39:24 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:39:24 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:41:04 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:41:04 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:42:18 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:42:18 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:43:12 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:43:12 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:06 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:06 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:09 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:09 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:50 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:50 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:51 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:51 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:52 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:52 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:47:53 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:48:47 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:48:47 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:48:52 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:48:52 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 15:49:52 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 15:49:52 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 16:50:33 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 16:50:33 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
+[24-Jul-2022 16:50:52 UTC] PHP Warning:  Undefined variable $fila in /home1/ventasdemujer/public_html/epharma/productos.php on line 107
+[24-Jul-2022 16:50:52 UTC] PHP Warning:  Undefined variable $finales in /home1/ventasdemujer/public_html/epharma/productos.php on line 109
