@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 18-05-2023 a las 05:35:18
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.1.2
+-- Host: 127.0.0.1
+-- Generation Time: May 28, 2023 at 07:49 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `importadora_medicamentos`
+-- Database: `importadora_medicamentos`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `im_lineas`
+-- Table structure for table `im_lineas`
 --
 
 CREATE TABLE `im_lineas` (
@@ -34,7 +34,7 @@ CREATE TABLE `im_lineas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `im_lineas`
+-- Dumping data for table `im_lineas`
 --
 
 INSERT INTO `im_lineas` (`id_linea`, `empresa`, `descripción`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `im_lineas` (`id_linea`, `empresa`, `descripción`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `im_lineas1`
+-- Table structure for table `im_lineas1`
 --
 
 CREATE TABLE `im_lineas1` (
@@ -56,7 +56,7 @@ CREATE TABLE `im_lineas1` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `im_lineas1`
+-- Dumping data for table `im_lineas1`
 --
 
 INSERT INTO `im_lineas1` (`id_linea`, `empresa`, `descripción`) VALUES
@@ -68,7 +68,7 @@ INSERT INTO `im_lineas1` (`id_linea`, `empresa`, `descripción`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `im_productos`
+-- Table structure for table `im_productos`
 --
 
 CREATE TABLE `im_productos` (
@@ -77,31 +77,34 @@ CREATE TABLE `im_productos` (
   `accion_terapeutica` varchar(200) NOT NULL,
   `ubicacion` varchar(50) NOT NULL,
   `id_linea` int(11) NOT NULL,
-  `estado` tinyint(1) NOT NULL
+  `estado` tinyint(1) NOT NULL,
+  `imagen` varchar(50) NOT NULL,
+  `precio` float NOT NULL,
+  `precio_rebajado` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `im_productos`
+-- Dumping data for table `im_productos`
 --
 
-INSERT INTO `im_productos` (`id`, `nombre`, `accion_terapeutica`, `ubicacion`, `id_linea`, `estado`) VALUES
-(1, 'Ibunastizol', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/ibunastizol.png', 1, 1),
-(2, 'Actual', 'Venta Libre - Antiácidos', 'img/productos/actual.png', 1, 1),
-(3, 'Actual Panto 24', 'Venta Libre - Antiácidos', 'img/productos/actual_panto.png', 1, 1),
-(4, 'Afebril Forte', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/afebril_forte.png', 2, 1),
-(5, 'Actinerval', 'Actinerval', 'img/productos/actinerval.png', 2, 1),
-(6, 'Amitax', 'Neurología', 'img/productos/amitax.jpg', 3, 1),
-(7, 'Bacticel comprimidos', 'Antibióticos', 'img/productos/bacticel_comprimidos.png', 3, 1),
-(8, 'Bacticel suspensión', 'Antibióticos', 'img/productos/bacticel_suspension.jpg', 3, 1),
-(9, 'Bagó B1 B6 B12 5.000 comprimidos', 'Complementos Vitamínicos', 'img/productos/bago_b1b6b12.png', 1, 1),
-(10, 'Cardiorex', 'Cardiología', 'img/productos/cardiorex.png', 2, 1),
-(11, 'Carvedil D', 'Cardiología', 'img/productos/carvedil_d.png', 3, 1),
-(12, 'Dioxaflex Gesic', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/dioxaflex_gesic.jpg', 3, 1);
+INSERT INTO `im_productos` (`id`, `nombre`, `accion_terapeutica`, `ubicacion`, `id_linea`, `estado`, `imagen`, `precio`, `precio_rebajado`) VALUES
+(1, 'Ibunastizol', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/ibunastizol.png', 1, 1, 'img/productos/ibunastizol.png', 17.5, 16.5),
+(2, 'Actual', 'Venta Libre - Antiácidos', 'img/productos/actual.png', 1, 1, 'img/productos/actual.png', 15, 13),
+(3, 'Actual Panto 24', 'Venta Libre - Antiácidos', 'img/productos/actual_panto.png', 1, 1, 'img/productos/actual_panto.png', 18, 16.5),
+(4, 'Afebril Forte', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/afebril_forte.png', 2, 1, 'img/productos/afebril_forte.png', 12, 11.5),
+(5, 'Actinerval', 'Actinerval', 'img/productos/actinerval.png', 2, 1, 'img/productos/actinerval.png', 12.5, 12),
+(6, 'Amitax', 'Neurología', 'img/productos/amitax.jpg', 3, 1, 'img/productos/amitax.jpg', 8, 7.5),
+(7, 'Bacticel comprimidos', 'Antibióticos', 'img/productos/bacticel_comprimidos.png', 3, 1, 'img/productos/bacticel_comprimidos.png', 12, 11.5),
+(8, 'Bacticel suspensión', 'Antibióticos', 'img/productos/bacticel_suspension.jpg', 3, 1, 'img/productos/bacticel_suspension.jpg', 13, 12.5),
+(9, 'Bagó B1 B6 B12 5.000 comprimidos', 'Complementos Vitamínicos', 'img/productos/bago_b1b6b12.png', 1, 1, 'img/productos/bago_b1b6b12.png', 3, 2.75),
+(10, 'Cardiorex', 'Cardiología', 'img/productos/cardiorex.png', 2, 1, 'img/productos/cardiorex.png', 13, 12.7),
+(11, 'Carvedil D', 'Cardiología', 'img/productos/carvedil_d.png', 3, 1, 'img/productos/carvedil_d.png', 14, 13.5),
+(12, 'Dioxaflex Gesic', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/dioxaflex_gesic.jpg', 3, 1, 'img/productos/dioxaflex_gesic.jpg', 18, 17.5);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `im_productos1`
+-- Table structure for table `im_productos1`
 --
 
 CREATE TABLE `im_productos1` (
@@ -110,79 +113,103 @@ CREATE TABLE `im_productos1` (
   `accion_terapeutica` varchar(200) NOT NULL,
   `ubicacion` varchar(50) NOT NULL,
   `id_linea` int(11) NOT NULL,
-  `estado` tinyint(1) NOT NULL
+  `estado` tinyint(1) NOT NULL,
+  `imagen` varchar(50) NOT NULL,
+  `precio` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `im_productos1`
+-- Dumping data for table `im_productos1`
 --
 
-INSERT INTO `im_productos1` (`id`, `nombre`, `accion_terapeutica`, `ubicacion`, `id_linea`, `estado`) VALUES
-(1, 'Ibunastizol', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/ibunastizol.png', 1, 1),
-(2, 'Actual', 'Venta Libre - Antiácidos', 'img/productos/actual.png', 1, 1),
-(3, 'Actual Panto 24', 'Venta Libre - Antiácidos', 'img/productos/actual_panto.png', 1, 1),
-(4, 'Afebril Forte', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/afebril_forte.png', 2, 1),
-(5, 'Actinerval', 'Actinerval', 'img/productos/actinerval.png', 2, 1),
-(6, 'Amitax', 'Neurología', 'img/productos/amitax.jpg', 3, 1),
-(7, 'Bacticel comprimidos', 'Antibióticos', 'img/productos/bacticel_comprimidos.png', 3, 1),
-(8, 'Bacticel suspensión', 'Antibióticos', 'img/productos/bacticel_suspension.jpg', 3, 1),
-(9, 'Bagó B1 B6 B12 5.000 comprimidos', 'Complementos Vitamínicos', 'img/productos/bago_b1b6b12.png', 1, 1),
-(10, 'Cardiorex', 'Cardiología', 'img/productos/cardiorex.png', 2, 1),
-(11, 'Carvedil D', 'Cardiología', 'img/productos/carvedil_d.png', 3, 1),
-(12, 'Dioxaflex Gesic', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/dioxaflex_gesic.jpg', 3, 1);
+INSERT INTO `im_productos1` (`id`, `nombre`, `accion_terapeutica`, `ubicacion`, `id_linea`, `estado`, `imagen`, `precio`) VALUES
+(1, 'Ibunastizol', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/ibunastizol.png', 1, 1, 'img/productos/ibunastizol.png', 17.5),
+(2, 'Actual', 'Venta Libre - Antiácidos', 'img/productos/actual.png', 1, 1, 'img/productos/actual.png', 15),
+(3, 'Actual Panto 24', 'Venta Libre - Antiácidos', 'img/productos/actual_panto.png', 1, 1, 'img/productos/actual_panto.png', 18),
+(4, 'Afebril Forte', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/afebril_forte.png', 2, 1, 'img/productos/afebril_forte.png', 12),
+(5, 'Actinerval', 'Actinerval', 'img/productos/actinerval.png', 2, 1, 'img/productos/actinerval.png', 12.5),
+(6, 'Amitax', 'Neurología', 'img/productos/amitax.jpg', 3, 1, 'img/productos/amitax.jpg', 8),
+(7, 'Bacticel comprimidos', 'Antibióticos', 'img/productos/bacticel_comprimidos.png', 3, 1, 'img/productos/bacticel_comprimidos.png', 12),
+(8, 'Bacticel suspensión', 'Antibióticos', 'img/productos/bacticel_suspension.jpg', 3, 1, 'img/productos/bacticel_suspension.jpg', 13),
+(9, 'Bagó B1 B6 B12 5.000 comprimidos', 'Complementos Vitamínicos', 'img/productos/bago_b1b6b12.png', 1, 1, 'img/productos/bago_b1b6b12.png', 3),
+(10, 'Cardiorex', 'Cardiología', 'img/productos/cardiorex.png', 2, 1, 'img/productos/cardiorex.png', 13),
+(11, 'Carvedil D', 'Cardiología', 'img/productos/carvedil_d.png', 3, 1, 'img/productos/carvedil_d.png', 14),
+(12, 'Dioxaflex Gesic', 'Analgésicos - Antiinflamatorios - Antiartrósicos', 'img/productos/dioxaflex_gesic.jpg', 3, 1, 'img/productos/dioxaflex_gesic.jpg', 18);
+
+-- --------------------------------------------------------
 
 --
--- Índices para tablas volcadas
+-- Table structure for table `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(35) NOT NULL,
+  `apellidos` varchar(50) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `contrasena` varchar(100) NOT NULL,
+  `categoria` enum('1','2','3','4') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `nombre`, `apellidos`, `correo`, `contrasena`, `categoria`) VALUES
+(1, 'Hamlet', 'Salinsa', 'ksdfuyqweh@gmail.com', '1234', '4');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `im_lineas`
+-- Indexes for table `im_lineas`
 --
 ALTER TABLE `im_lineas`
   ADD PRIMARY KEY (`id_linea`);
 
 --
--- Indices de la tabla `im_lineas1`
+-- Indexes for table `im_lineas1`
 --
 ALTER TABLE `im_lineas1`
   ADD PRIMARY KEY (`id_linea`);
 
 --
--- Indices de la tabla `im_productos`
+-- Indexes for table `im_productos`
 --
 ALTER TABLE `im_productos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `im_productos1`
+-- Indexes for table `im_productos1`
 --
 ALTER TABLE `im_productos1`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `im_lineas`
+-- AUTO_INCREMENT for table `im_lineas`
 --
 ALTER TABLE `im_lineas`
   MODIFY `id_linea` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `im_lineas1`
+-- AUTO_INCREMENT for table `im_lineas1`
 --
 ALTER TABLE `im_lineas1`
   MODIFY `id_linea` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `im_productos`
+-- AUTO_INCREMENT for table `im_productos`
 --
 ALTER TABLE `im_productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT de la tabla `im_productos1`
+-- AUTO_INCREMENT for table `im_productos1`
 --
 ALTER TABLE `im_productos1`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;

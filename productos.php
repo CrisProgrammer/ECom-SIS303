@@ -104,9 +104,9 @@ $resprom = $con->query($sqlprom);
                       
   <?php          	echo "<ul>";
 	while($row = mysqli_fetch_assoc($resprom)){	
-          $fila++;
+          //$fila++;
             $id =  $row['id'];
-            $finales++;
+            //$finales++;
             //Datos de productos
             $nombre = utf8_encode($row['nombre']);
             $accion_terapeutica =  utf8_encode($row['accion_terapeutica']);
@@ -127,7 +127,7 @@ $resprom = $con->query($sqlprom);
                     <h4>Mecanismo de compra por internet</h4>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <p>1. Solicitud realizada al número de WhatsApp Empresarial 77121123</p>
+                    <p>1. Solicitud realizada al número de WhatsApp Empresarial 71070310</p>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <p>2. Pago por QR</p> <br>
