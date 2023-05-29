@@ -20,7 +20,7 @@
   --dark-blue: #5ea5bc;
   --dark-green: #2aa2a0;
   --dark-light: #30475E;
-  --violeta: #7c1eb6;
+  --violeta: #004da6 ;
   --yellow: #FFD814;
   --grey: #ecedf3;
 }
@@ -54,7 +54,7 @@ body{
 }
 .animado{
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .mostrarArriba{
   animation: mostrarArriba 1s;
@@ -251,7 +251,7 @@ body{
 
 h1 { 
   font-family: 'Ultra', serif;
-  color: #7c1eb6;
+  color: #004da6 ;
   position: relative; 
   font-size: 50px;
 }
@@ -281,7 +281,7 @@ h4 {
 .datos2 a{
   display: block;
   padding: 20px;
-  color: #7c1eb6;
+  color: #004da6 ;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -300,7 +300,7 @@ h4 {
 .topico02:after {
   display: block;
 	position:relative;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .sub-topicos p{
   font-size: 18px;
@@ -316,7 +316,7 @@ h4 {
   text-align: center;
 }
 .topico02 a:hover{
-  background-color: #7c1eb6;
+  background-color: #004da6 ;
   color: #2aa2a0;
 }
 .topico03 {
@@ -327,7 +327,7 @@ h4 {
 .topico03:after {
   display: block;
 	position:relative;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .topicos .botoncitos .activar_letra{
   color:var(--violeta);
@@ -344,7 +344,7 @@ h4 {
 }
 .topicos .botoncitos a:hover{
   background-color: #ecedf3;
-  color: #7c1eb6;
+  color: #004da6 ;
 }
 
 .parallax05{
@@ -390,7 +390,7 @@ h4 {
 .buscador h4{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22px;
-  color: #7c1eb6;
+  color: #004da6 ;
 }
 .buscador select{
   width: 300px;
@@ -501,14 +501,14 @@ h4 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-left: 20px;
-  background-color: #7c1eb6;
+  background-color: #004da6 ;
   color: #fff;
-  border-style: #7c1eb6;
+  border-style: #004da6 ;
   padding: 10px 15px;
 }
 .botones:hover{
   background-color: #ecedf3;
-  color: #7c1eb6;
+  color: #004da6 ;
   border-style: #ecedf3;
 }
 .boton{
@@ -533,7 +533,7 @@ h4 {
     width: 60px;
     height:60px;
     padding-top: 17px;
-    background-color: #7c1eb6;
+    background-color: #004da6 ;
 }
 /* inclinar texto descuentos indice*/
 .move-right{
@@ -549,7 +549,7 @@ h4 {
 }
 .indice_cart{
   display: flex;
-  color: #7c1eb6;
+  color: #004da6 ;
   background-color: #fff;
   border: 1px solid #2aa2a0;
   border-radius: 50px;
@@ -570,11 +570,11 @@ h4 {
 }
 .borrar-producto:hover {
   background-color: #fff;
-  border-color: #7c1eb6;
+  border-color: #004da6 ;
   border-radius: 50%;
   padding: 5px 10px;
   text-decoration: none;
-  color: #7c1eb6;
+  color: #004da6 ;
   font-weight: bold;
 }
 .section-card{
@@ -736,7 +736,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   h1 { 
     font-family: 'Ultra', serif;
-    color: #7c1eb6;
+    color: #004da6 ;
     font-size: 30px;
     position: relative; 
     left: 0%;

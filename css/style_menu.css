@@ -62,7 +62,7 @@ header nav ul li a{
 }
   
 header nav ul li:hover{
-    border-bottom: 2px solid #7c1eb6;
+    border-bottom: 2px solid #004da6;
     font-weight: 700;
     font-size: 16px;
 }
@@ -111,7 +111,7 @@ header nav ul li .caret{
     color: #000;
 }
 .active {
-    border-bottom: 2px solid #7c1eb6;
+    border-bottom: 2px solid #004da6 !important;
     font-weight: 700;
     font-size: 16px;
 }
@@ -203,7 +203,7 @@ header nav ul li .caret{
         display: none;
     }
   .active{
-      border-color: 1px solid #7c1eb6;
+      border-color: 1px solid #004da6 !important;
   }
   .menu-fixed{
     background-color: #ccc;
@@ -239,9 +239,6 @@ header nav ul li .caret{
         background-color: #ccc;
         z-index: 5000;*/
     }
-    .menu-toggle img{
-        width: 150px;
-    }
     .menu-toggle .bt-menu{
       display: block;
       padding: 20px;
@@ -276,7 +273,7 @@ header nav ul li .caret{
     }    
     header nav ul li {
       display: block;
-      border-bottom: 1px solid #7c1eb6;
+      border-bottom: 1px solid #004da6;
       padding: 0px;
         float: none;
   }
@@ -306,7 +303,7 @@ header nav ul li .caret{
         display:inline-block;
     }
     .active{
-        border-color: 1px solid #7c1eb6;
+        border-color: 1px solid #004da6;
     }
   
   }

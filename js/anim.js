@@ -3,7 +3,7 @@ $(document).ready(function(){
         $(this).css('-webkit-box-shadow', '0 5px 15px rgba(0,0,0,0.3)');
         $(this).css('-moz-box-shadow', '0 5px 15px rgba(0,0,0,0.3)');
         $(this).css('box-shadow', '0 5px 15px rgba(0,0,0,0.3)');
-        $(this).css('transition', 'box-shadow 0.5s ease-in-out');
+        $(this).css('transition', 'box-shadow 0.2s ease-in-out');
     }).on("mouseleave", function () {
         $(this).css('-webkit-box-shadow', 'none');
         $(this).css('-moz-box-shadow', 'none');

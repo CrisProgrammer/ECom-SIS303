@@ -27,7 +27,7 @@ a, a:hover {
 .header .navbar {
   background-color: transparent !important;
 }
-..colorlib-navbar-brand{
+.colorlib-navbar-brand{
   z-index: 1501;
 }
 .colorlib-navbar-brand a img{

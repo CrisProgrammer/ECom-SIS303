@@ -18,9 +18,9 @@
   --white: #F5F5F5;
   --black: #000000;
   --dark-blue: #5ea5bc;
-  --dark-green: #2aa2a0;
+  --dark-green: #29abe2;
   --dark-light: #30475E;
-  --violeta: #7c1eb6;
+  --violeta: #004da6 ;
   --yellow: #FFD814;
   --grey: #ecedf3;
 }
@@ -54,7 +54,7 @@ body{
 }
 .animado{
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .mostrarArriba{
   animation: mostrarArriba 1s;
@@ -151,7 +151,7 @@ body{
 .parallax03 .texto{ 
   position: absolute;
   display: flex; 
-  background-color: #2aa2a0;
+  background-color: #29abe2;
   color: #F5F5F5;
   width: 650px;
   height: 25vh;
@@ -212,33 +212,6 @@ body{
       transform: unset;
     } 
 }
-.promociones h4{
-  font-family: 'Josefin Sans', sans-serif;
-  color: #7c1eb6;
-  position: relative; 
-  font-size: 50px;
-  text-align: center;
-}
-.promociones{
-  display: flex;
-}
-.promociones ul{
-  list-style: none;
-
-}
-.promociones ul li{
-  display: inline-block;
-  position: relative;
-  padding: 20px;
-}
-.promociones ul li a{
-  text-decoration: none;
-  color: #353535;
-}
-.promociones ul li img{
-  width: 250px;
-  height: auto;
-}
 
 
 .titulos{
@@ -278,7 +251,7 @@ body{
 
 h1 { 
   font-family: 'Ultra', serif;
-  color: #7c1eb6;
+  color: #004da6 ;
   position: relative; 
   font-size: 50px;
 }
@@ -299,7 +272,7 @@ h4 {
   top: 50px;
 }
 .datos1{
-  background-color:#2aa2a0;
+  background-color:#29abe2;
   color:#fff;
 }
 .datos2{
@@ -308,7 +281,7 @@ h4 {
 .datos2 a{
   display: block;
   padding: 20px;
-  color: #7c1eb6;
+  color: #004da6 ;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -327,7 +300,7 @@ h4 {
 .topico02:after {
   display: block;
 	position:relative;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .sub-topicos p{
   font-size: 18px;
@@ -336,15 +309,15 @@ h4 {
 }
 .topico02 a{
   display: inline-block;
-  background-color: #2aa2a0;
+  background-color: #29abe2;
   color: #fff;
   width: 80%;
   height: auto;
   text-align: center;
 }
 .topico02 a:hover{
-  background-color: #7c1eb6;
-  color: #2aa2a0;
+  background-color: #004da6 ;
+  color: #29abe2;
 }
 .topico03 {
   margin: 2px 2px;
@@ -354,7 +327,7 @@ h4 {
 .topico03:after {
   display: block;
 	position:relative;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .topicos .botoncitos .activar_letra{
   color:var(--violeta);
@@ -371,7 +344,7 @@ h4 {
 }
 .topicos .botoncitos a:hover{
   background-color: #ecedf3;
-  color: #7c1eb6;
+  color: #004da6 ;
 }
 
 .parallax05{
@@ -417,7 +390,7 @@ h4 {
 .buscador h4{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22px;
-  color: #7c1eb6;
+  color: #004da6 ;
 }
 .buscador select{
   width: 300px;
@@ -482,11 +455,6 @@ h4 {
   text-align: center;
   padding: 70px 70px;
 }
-form input[type='number']{
-  padding: 0px;
-  margin: 0px;
-  width: 100px;
-}
 .descripcion select{
   width: 300px;
   font-family: 'Josefin Sans', sans-serif;
@@ -522,7 +490,7 @@ form input[type='number']{
 }
 .linkening div a{
   font-size: 22px;
-  color:#2aa2a0;
+  color:#29abe2;
 }
 .linkening div span{
   font-size: 22px;
@@ -533,14 +501,14 @@ form input[type='number']{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-left: 20px;
-  background-color: #7c1eb6;
+  background-color: #004da6 ;
   color: #fff;
-  border-style: #7c1eb6;
+  border-style: #004da6 ;
   padding: 10px 15px;
 }
 .botones:hover{
   background-color: #ecedf3;
-  color: #7c1eb6;
+  color: #004da6 ;
   border-style: #ecedf3;
 }
 .boton{
@@ -565,7 +533,7 @@ form input[type='number']{
     width: 60px;
     height:60px;
     padding-top: 17px;
-    background-color: #7c1eb6;
+    background-color: #004da6 ;
 }
 /* inclinar texto descuentos indice*/
 .move-right{
@@ -581,9 +549,9 @@ form input[type='number']{
 }
 .indice_cart{
   display: flex;
-  color: #7c1eb6;
+  color: #004da6 ;
   background-color: #fff;
-  border: 1px solid #2aa2a0;
+  border: 1px solid #29abe2;
   border-radius: 50px;
   align-content: center;
   justify-content: center;
@@ -593,7 +561,7 @@ form input[type='number']{
   text-align: center;
 }
 .borrar-producto {
-  background-color: #2aa2a0;
+  background-color: #29abe2;
   border-radius: 50%;
   padding: 5px 10px;
   text-decoration: none;
@@ -602,11 +570,11 @@ form input[type='number']{
 }
 .borrar-producto:hover {
   background-color: #fff;
-  border-color: #7c1eb6;
+  border-color: #004da6 ;
   border-radius: 50%;
   padding: 5px 10px;
   text-decoration: none;
-  color: #7c1eb6;
+  color: #004da6 ;
   font-weight: bold;
 }
 .section-card{
@@ -768,7 +736,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   h1 { 
     font-family: 'Ultra', serif;
-    color: #7c1eb6;
+    color: #004da6 ;
     font-size: 30px;
     position: relative; 
     left: 0%;
